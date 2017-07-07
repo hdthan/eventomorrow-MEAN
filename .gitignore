@@ -1,5 +1,5 @@
 .idea/
-.node_modules/
+node_modules/
 front-end/assets/
 npm-debug.log
 .DS_Store
