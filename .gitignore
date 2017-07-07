@@ -1,11 +1,7 @@
 .idea/
-target/
-a_events_webservice.iml
-internship_program.events_webservice.iml
-front-end/node_modules
+.node_modules/
 front-end/assets/
 npm-debug.log
-src/main/resources/local.properties
 .DS_Store
 *.log
 *.map
