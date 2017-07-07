@@ -16,17 +16,27 @@ let app = express();
 //     next();
 // };
 // app.use(noti);
-
+    let than = [{
+        age: 21,
+        lastName: 'Huynh'
+    }, {
+        age: 21,
+        lastName: 'Huynh'
+    }, {
+        age: 21,
+        lastName: 'Huynh'
+    }]
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
 //set static path
-app.use(express.static(path.join(__dirname,'client')));
+// app.use(express.static(path.join(__dirname,'client')));
 
 
 app.get('/', (req, res) => {
-  res.send('Hello, this is respons send form server');
+  // res.send('Hello, this is response send form server');
+  res.json(than);
 });
 
-app.listen(port,hostname, () => {console.log("server start on port 3000..");});
+app.listen(port,hostname, () => {console.log("server start and listen on port 3000..");});
 
