@@ -1,19 +1,32 @@
-const http = require('http');
-var docFile = require("fs").readFile;
-const hostname = '127.0.0.1';
-const port = 3000;
-docFile('index.html', (err, htmlData) => {
-  if(err){
-    throw err;
-  }
-  const server = http.createServer((req,res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-type', 'html');
-    res.write(htmlData);
-    res.end();
-  });
+/*jslint esversion: 6*/
+/*jslint node: true */
+"use strict";
+let express = require('express');
+let path = require('path');
+let bodyParser = require('body-parser');
 
-  server.listen(port, hostname,()=>{
-    console.log('Server listen on port '+ port);
-  })
-})
+let hostname = '127.0.0.2';
+let port = 3000;
+
+let app = express();
+
+//Middleware
+// let noti = (req, res, next) => {
+//     console.log("this is noti");
+//     next();
+// };
+// app.use(noti);
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+
+//set static path
+app.use(express.static(path.join(__dirname,'client')));
+
+
+app.get('/', (req, res) => {
+  res.send('Hello, this is respons send form server');
+});
+
+app.listen(port,hostname, () => {console.log("server start on port 3000..");});
+

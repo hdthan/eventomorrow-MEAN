@@ -9,7 +9,12 @@
   "author": "than",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.23.0",
     "body-parser": "^1.17.2",
+    "esversion": "*",
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1"
   }
 }
