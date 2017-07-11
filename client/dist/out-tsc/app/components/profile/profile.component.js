@@ -32,7 +32,8 @@ ProfileComponent = __decorate([
         templateUrl: './profile.component.html',
         styleUrls: ['./profile.component.css']
     }),
-    __metadata("design:paramtypes", [AuthService, Router])
+    __metadata("design:paramtypes", [AuthService, typeof (_a = typeof Router !== "undefined" && Router) === "function" && _a || Object])
 ], ProfileComponent);
 export { ProfileComponent };
-//# sourceMappingURL=../../../../../src/app/components/profile/profile.component.js.map
+var _a;
+//# sourceMappingURL=C:/Users/hdthan.AAVN/OneDrive/Project/eventomorrow-nodejs/client/src/app/components/profile/profile.component.js.map

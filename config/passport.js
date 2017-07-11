@@ -1,6 +1,6 @@
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
-const User = require('../../meanauthapp/models/user');
+const User = require('../models/user');
 const config = require('./database');
 
 module.exports = function(passport){
@@ -12,7 +12,7 @@ module.exports = function(passport){
       if(err){
         return done(err, false);
       }
-
+      console.log(user);
       if(user){
         return done(null, user);
       } else {
@@ -20,4 +20,4 @@ module.exports = function(passport){
       }
     });
   }));
-}
+};

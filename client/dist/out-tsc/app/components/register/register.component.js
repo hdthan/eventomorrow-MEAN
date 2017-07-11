@@ -29,14 +29,17 @@ var RegisterComponent = (function () {
             username: this.username,
             password: this.password
         };
+        // Required Fields
         if (!this.validateService.validateRegister(user)) {
             this.flashMessage.show('Please fill in all fields', { cssClass: 'alert-danger', timeout: 3000 });
             return false;
         }
+        // Validate Email
         if (!this.validateService.validateEmail(user.email)) {
             this.flashMessage.show('Please use a valid email', { cssClass: 'alert-danger', timeout: 3000 });
             return false;
         }
+        // Register user
         this.authService.registerUser(user).subscribe(function (data) {
             if (data.success) {
                 _this.flashMessage.show('You are now registered and can log in', { cssClass: 'alert-success', timeout: 3000 });
@@ -56,10 +59,8 @@ RegisterComponent = __decorate([
         templateUrl: './register.component.html',
         styleUrls: ['./register.component.css']
     }),
-    __metadata("design:paramtypes", [ValidateService,
-        FlashMessagesService,
-        AuthService,
-        Router])
+    __metadata("design:paramtypes", [ValidateService, typeof (_a = typeof FlashMessagesService !== "undefined" && FlashMessagesService) === "function" && _a || Object, AuthService, typeof (_b = typeof Router !== "undefined" && Router) === "function" && _b || Object])
 ], RegisterComponent);
 export { RegisterComponent };
-//# sourceMappingURL=../../../../../src/app/components/register/register.component.js.map
+var _a, _b;
+//# sourceMappingURL=C:/Users/hdthan.AAVN/OneDrive/Project/eventomorrow-nodejs/client/src/app/components/register/register.component.js.map

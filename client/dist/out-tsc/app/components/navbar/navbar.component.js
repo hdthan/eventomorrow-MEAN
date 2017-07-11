@@ -36,9 +36,8 @@ NavbarComponent = __decorate([
         templateUrl: './navbar.component.html',
         styleUrls: ['./navbar.component.css']
     }),
-    __metadata("design:paramtypes", [AuthService,
-        Router,
-        FlashMessagesService])
+    __metadata("design:paramtypes", [AuthService, typeof (_a = typeof Router !== "undefined" && Router) === "function" && _a || Object, typeof (_b = typeof FlashMessagesService !== "undefined" && FlashMessagesService) === "function" && _b || Object])
 ], NavbarComponent);
 export { NavbarComponent };
-//# sourceMappingURL=../../../../../src/app/components/navbar/navbar.component.js.map
+var _a, _b;
+//# sourceMappingURL=C:/Users/hdthan.AAVN/OneDrive/Project/eventomorrow-nodejs/client/src/app/components/navbar/navbar.component.js.map

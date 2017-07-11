@@ -14,7 +14,7 @@ import { tokenNotExpired } from 'angular2-jwt';
 var AuthService = (function () {
     function AuthService(http) {
         this.http = http;
-        this.isDev = true;
+        this.isDev = true; // Change to false before deployment
     }
     AuthService.prototype.registerUser = function (user) {
         var headers = new Headers();
@@ -69,7 +69,8 @@ var AuthService = (function () {
 }());
 AuthService = __decorate([
     Injectable(),
-    __metadata("design:paramtypes", [Http])
+    __metadata("design:paramtypes", [typeof (_a = typeof Http !== "undefined" && Http) === "function" && _a || Object])
 ], AuthService);
 export { AuthService };
-//# sourceMappingURL=../../../../src/app/services/auth.service.js.map
+var _a;
+//# sourceMappingURL=C:/Users/hdthan.AAVN/OneDrive/Project/eventomorrow-nodejs/client/src/app/services/auth.service.js.map

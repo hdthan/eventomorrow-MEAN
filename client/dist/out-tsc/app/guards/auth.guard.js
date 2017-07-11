@@ -28,7 +28,8 @@ var AuthGuard = (function () {
 }());
 AuthGuard = __decorate([
     Injectable(),
-    __metadata("design:paramtypes", [AuthService, Router])
+    __metadata("design:paramtypes", [AuthService, typeof (_a = typeof Router !== "undefined" && Router) === "function" && _a || Object])
 ], AuthGuard);
 export { AuthGuard };
-//# sourceMappingURL=../../../../src/app/guards/auth.guard.js.map
+var _a;
+//# sourceMappingURL=C:/Users/hdthan.AAVN/OneDrive/Project/eventomorrow-nodejs/client/src/app/guards/auth.guard.js.map
