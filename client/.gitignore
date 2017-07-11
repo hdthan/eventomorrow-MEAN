@@ -1,24 +1,15 @@
-.idea/
-front-end/assets/
-npm-debug.log
-.DS_Store
-*.log
-*.map
-e2e/tsconfig.e2e.json
-src/tsconfig.app.json
-src/tsconfig.spec.json
-src/typings.d.ts
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/public
+/dist
 /tmp
 /out-tsc
 
 # dependencies
-node_modules/
-.vs
+/node_modules
+
 # IDEs and editors
+/.idea
 .project
 .classpath
 .c9/
@@ -38,6 +29,7 @@ node_modules/
 /connect.lock
 /coverage
 /libpeerconnection.log
+npm-debug.log
 testem.log
 /typings
 
@@ -46,4 +38,5 @@ testem.log
 /e2e/*.map
 
 # System Files
+.DS_Store
 Thumbs.db
