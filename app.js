@@ -89,5 +89,5 @@ app.get('*', (req, res) => {
 //   // res.render('index'); //render ejs
 // }); //This is route handler, file name is index, can pass data as 2nd parameter
 
-app.listen(port,hostname, () => {console.log("server start and listen on port 3000..");});
+app.listen(port,hostname, () => {console.log("server start and listen on port "+port)});
 
